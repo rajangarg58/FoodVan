@@ -150,7 +150,7 @@
                                 android:id="@+id/phoneNo"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="+918860281232"
+                                android:text="+919999999999"
                                 android:textColor="@color/black"
                                 android:textStyle="bold" />
 

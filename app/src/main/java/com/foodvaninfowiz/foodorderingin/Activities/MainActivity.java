@@ -130,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.whatsapp:
                         openWhatsApp();
                         break;
+                        default:
+                            break;
                 }
                 return false;
             }
