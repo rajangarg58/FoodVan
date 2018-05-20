@@ -8,7 +8,7 @@ public class Api {
 
         // change your base URL
         RestAdapter adapter = new RestAdapter.Builder()
-                .setEndpoint("http://13.127.110.47/") //Set the Root URL
+                .setEndpoint("http://13.127.110.47") //Set the Root URL
                 .build(); //Finally building the adapter
 
         //Creating object for our interface
