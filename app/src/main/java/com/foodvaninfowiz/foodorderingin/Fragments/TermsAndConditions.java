@@ -35,7 +35,7 @@ public class TermsAndConditions extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_faq, container, false);
         ButterKnife.bind(this, view);
-        //getTerms();
+        getTerms();
         return view;
     }
 
@@ -47,7 +47,7 @@ public class TermsAndConditions extends Fragment {
         Config.getCartList(getActivity(), true);
     }
 
-  /*  public void getTerms() {
+    public void getTerms() {
         final SweetAlertDialog pDialog = new SweetAlertDialog(getActivity(), SweetAlertDialog.PROGRESS_TYPE);
         pDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.colorPrimary));
         pDialog.setTitleText("Loading");
@@ -67,5 +67,5 @@ public class TermsAndConditions extends Fragment {
 
             }
         });
-    }*/
+    }
 }
