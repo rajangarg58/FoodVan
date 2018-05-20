@@ -19,6 +19,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.foodvaninfowiz.foodorderingin.Activities.SplashScreen;
 import com.foodvaninfowiz.foodorderingin.Fragments.MainFragment;
 import com.foodvaninfowiz.foodorderingin.Fragments.ProductDetail;
 import com.foodvaninfowiz.foodorderingin.MVP.Product;
@@ -88,7 +89,12 @@ public class MyWishListAdapter extends RecyclerView.Adapter<MyWishListAdapter.My
     @Override
     public void onBindViewHolder(final MyWishListViewHolder holder, final int position) {
 
-        holder.currency.setText("$");
+        String bablu;
+        if (SplashScreen.restaurantDetailResponseData.getCurrency().equalsIgnoreCase("USD"))
+            bablu = "$";
+        else
+            bablu = "₹";
+        holder.currency.setText(bablu);
         Log.d("posIS", selectedList + "");
         holder.price.setText(productList.get(position).getVariants().get(selectedList.get(position)).getVarprice());
         holder.productName.setText(productList.get(position).getProductName() + " - " +
