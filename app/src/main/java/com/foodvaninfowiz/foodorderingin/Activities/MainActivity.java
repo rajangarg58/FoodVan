@@ -263,9 +263,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void getCurrency() {
         try {
-            /*if (SplashScreen.restaurantDetailResponseData.getCurrency().equalsIgnoreCase("USD"))
+            if (SplashScreen.restaurantDetailResponseData.getCurrency().equalsIgnoreCase("USD"))
                 currency = "$";
-            else*/
+            else
                 currency = "₹";
         } catch (Exception e) {
             Log.d("currencyError",e.toString());
