@@ -29,7 +29,7 @@
         android:icon="@drawable/food_app_icon"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@drawable/food_app_icon"
+        android:roundIcon="@drawable/food_dome"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">

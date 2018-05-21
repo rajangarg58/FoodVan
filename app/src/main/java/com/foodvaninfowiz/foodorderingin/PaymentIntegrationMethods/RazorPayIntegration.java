@@ -1,7 +1,9 @@
 package com.foodvaninfowiz.foodorderingin.PaymentIntegrationMethods;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
@@ -57,6 +59,7 @@ public class RazorPayIntegration extends AppCompatActivity implements PaymentRes
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onPaymentSuccess(String razorpayPaymentID) {
         Config.addOrder(RazorPayIntegration.this,
