@@ -19,6 +19,7 @@
     <uses-permission
         android:name="android.permission.CAMERA"
         tools:node="remove" />
+
     <permission
         android:name="com.foodvaninfowiz.foodvan.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
