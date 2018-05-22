@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.foodvaninfowiz.foodorderingin">
+    package="com.foodvaninfowiz.foodvan">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,7 +20,7 @@
         android:name="android.permission.CAMERA"
         tools:node="remove" />
     <permission
-        android:name="com.foodvaninfowiz.foodorderingin.permission.C2D_MESSAGE"
+        android:name="com.foodvaninfowiz.foodvan.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <application
@@ -34,10 +34,10 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.MainActivity"
+            android:name="com.foodvaninfowiz.foodvan.Activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.SplashScreen"
+            android:name="com.foodvaninfowiz.foodvan.Activities.SplashScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -47,29 +47,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.Login"
+            android:name="com.foodvaninfowiz.foodvan.Activities.Login"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.SignUp"
+            android:name="com.foodvaninfowiz.foodvan.Activities.SignUp"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.ForgotPassword"
+            android:name="com.foodvaninfowiz.foodvan.Activities.ForgotPassword"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.ProductExtra"
+            android:name="com.foodvaninfowiz.foodvan.Activities.ProductExtra"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.EditCart"
+            android:name="com.foodvaninfowiz.foodvan.Activities.EditCart"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.foodvaninfowiz.foodorderingin.PaymentIntegrationMethods.OrderConfirmed" />
-        <activity android:name="com.foodvaninfowiz.foodorderingin.PaymentIntegrationMethods.RazorPayIntegration" />
+        <activity android:name="com.foodvaninfowiz.foodvan.PaymentIntegrationMethods.OrderConfirmed" />
+        <activity android:name="com.foodvaninfowiz.foodvan.PaymentIntegrationMethods.RazorPayIntegration" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDagu1__IQVkCjlGIGYkbdUf-JcJ0hofZ0" />
         <activity
-            android:name="com.foodvaninfowiz.foodorderingin.Activities.MapViewActivity"
+            android:name="com.foodvaninfowiz.foodvan.Activities.MapViewActivity"
             android:screenOrientation="portrait" />
 
 
@@ -77,19 +77,19 @@
             android:name="com.razorpay.ApiKey"
             android:value="rzp_test_K6veGqYGkoWgi1" />
         <!-- Firebase Notifications -->
-        <service android:name="com.foodvaninfowiz.foodorderingin.FCM.MyFirebaseMessagingService">
+        <service android:name="com.foodvaninfowiz.foodvan.FCM.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.foodvaninfowiz.foodorderingin.FCM.MyFirebaseInstanceIDService">
+        <service android:name="com.foodvaninfowiz.foodvan.FCM.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <!-- ./Firebase Notifications -->
-        <activity android:name="com.foodvaninfowiz.foodorderingin.Activities.AccountVerification"/>
+        <activity android:name="com.foodvaninfowiz.foodvan.Activities.AccountVerification"/>
 
     </application>
 

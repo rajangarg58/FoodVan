@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.foodvaninfowiz.foodorderingin.Activities.SplashScreen">
+    tools:context="com.foodvaninfowiz.foodvan.Activities.SplashScreen">
 
     <ImageView
         android:id="@+id/splashImage"
